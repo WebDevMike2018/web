@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "bubbler-one";
+	src: url("fonts/BubblerOne-Regular.ttf");
+}
+.h1 {
+	background-color: hsl(350, 100%, 88%);
+}
+.h2 {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1920px;
+	margin-inline: auto;
+}
+.h2 > a {
+	padding: 12px;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+.h2 > a:hover {
+	background-color: hsl(16, 100%, 66%);
+}

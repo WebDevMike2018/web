@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title></title>
+<meta charset='utf-8'>
+<meta name='author' content='Michael Griffiths (webdevmike2018@gmail.com)'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link href='css/carousel.css' rel='stylesheet'>
+</head>
+<body>
+<span id='id0' class='cl0'></span>
+<div class='slideShow1'>
+	<div id='slideShow1' class='slideShow4 slideShow5'>&#10094;</div>
+	<div id='slideShow2' class='slideShow4 slideShow6'>&#10095;</div>
+	<div id='slideShow3'>
+		<div class='slideShow2' style='transform:translateX(-340px) scale(0.5);opacity:0.5;visibility:hidden;'><img class='slideShow3' src='media/image/carousel/5.png'></div>
+		<div class='slideShow2' style='transform:translateX(-340px) scale(0.75);opacity:0.75;'><img class='slideShow3' src='media/image/carousel/6.png'></div>
+		<div class='slideShow2'><img class='slideShow3' src='media/image/carousel/1.png'></div>
+		<div class='slideShow2' style='transform:translateX(340px) scale(0.75);opacity:0.75;'><img class='slideShow3' src='media/image/carousel/2.png'></div>
+		<div class='slideShow2' style='transform:translateX(340px) scale(0.5);opacity:0.5;visibility:hidden;'><img class='slideShow3' src='media/image/carousel/3.png'></div>
+	</div>
+</div>
+<script async>
+// add dots
+// last id = slideShow3
+// DOM
+// Declaration & Assignment
+let aImage, iImageIndex;
+aImage = [
+	'media/image/carousel/1.png',
+	'media/image/carousel/2.png',
+	'media/image/carousel/3.png',
+	'media/image/carousel/4.png',
+	'media/image/carousel/5.png',
+	'media/image/carousel/6.png'
+];
+iImageIndex = 0;
+// Functions
+function fSlide(n) {
+	let aSlide, oDiv, oImg;
+	aSlide = document.querySelectorAll('.slideShow2');
+	iImageIndex += n;
+	if (iImageIndex == aImage.length) {
+		iImageIndex = 0;
+	}
+	if (iImageIndex < 0) {
+		iImageIndex = aImage.length - 1;
+	}
+	if (n > 0) {
+		aSlide[0].remove();
+		aSlide[1].style.transform = 'translateX(-340px) scale(0.5)';
+		aSlide[1].style.opacity = '0';
+		aSlide[1].style.visibility = 'hidden';
+		aSlide[2].style.transform = 'translateX(-340px) scale(0.75)';
+		aSlide[2].style.opacity = '0.75';
+		aSlide[2].style.zIndex = '0';
+		aSlide[3].style.transform = 'translateX(0px) scale(1)';
+		aSlide[3].style.opacity = '1';
+		aSlide[3].style.zIndex = '1';
+		aSlide[4].style.transform = 'translateX(340px) scale(0.75)';
+		aSlide[4].style.opacity = '0.75';
+		aSlide[4].style.visibility = 'visible';
+		oDiv = document.createElement('DIV');
+		oDiv.classList.add('slideShow2');
+		oDiv.style.transform = 'translateX(340px) scale(0.5)';
+		oDiv.style.opacity = '0.5';
+		oDiv.style.visibility = 'hidden';
+		oImg = document.createElement('IMG');
+		oImg.classList.add('slideShow3');
+		if (iImageIndex + 2 == aImage.length) {
+			oImg.src = aImage[0];
+		} else if (iImageIndex + 2 > aImage.length) {
+			oImg.src = aImage[1];
+		} else {
+			oImg.src = aImage[iImageIndex + 2];
+		}
+		oDiv.append(oImg);
+		slideShow3.append(oDiv);
+	} else {
+		aSlide[4].remove();
+		aSlide[3].style.transform = 'translateX(340px) scale(0.5)';
+		aSlide[3].style.opacity = '0';
+		aSlide[3].style.visibility = 'hidden';
+		aSlide[2].style.transform = 'translateX(340px) scale(0.75)';
+		aSlide[2].style.opacity = '0.75';
+		aSlide[2].style.zIndex = '0';
+		aSlide[1].style.transform = 'translateX(0px) scale(1)';
+		aSlide[1].style.opacity = '1';
+		aSlide[1].style.zIndex = '1';
+		aSlide[0].style.transform = 'translateX(-340px) scale(0.75)';
+		aSlide[0].style.opacity = '0.75';
+		aSlide[0].style.visibility = 'visible';
+		oDiv = document.createElement('DIV');
+		oDiv.classList.add('slideShow2');
+		oDiv.style.transform = 'translateX(-340px) scale(0.5)';
+		oDiv.style.opacity = '0.5';
+		oDiv.style.visibility = 'hidden';
+		oImg = document.createElement('IMG');
+		oImg.classList.add('slideShow3');
+		if (iImageIndex - 2 == -1) {
+			oImg.src = aImage[aImage.length - 1];
+		} else if (iImageIndex - 2 == -2) {
+			oImg.src = aImage[aImage.length - 2];
+		} else {
+			oImg.src = aImage[iImageIndex - 2];
+		}
+		oDiv.append(oImg);
+		slideShow3.prepend(oDiv);
+	}
+}
+// Event Listeners
+slideShow1.addEventListener('click', function() { fSlide(-1); });
+slideShow2.addEventListener('click', function() { fSlide(1); });
+// Invoke
+</script>
+</body>
+</html>

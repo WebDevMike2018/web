@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body * {
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+}
+.cl1 {
+	margin: auto;
+	max-width: 600px;
+	padding: 0 8px;
+}
+.cl2 {
+	border: 1px solid #e50808;
+	border-radius: 8px;
+	margin-top: 52px;
+	margin-bottom: 16px;
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding: 8px 16px;
+	background-color: white;
+	text-align: center;
+}
+.cl2:first-child {
+	margin-top: 0;
+}
+.cl3 {
+	border: 1px solid #e50808;
+	border-radius: 8px;
+	margin-bottom: 16px;
+	padding: 16px;
+	background-color: white;
+}
+.cl4 {
+	background-color: #ebcbec;
+	font-size: 0.875rem;
+}
+.cl4:last-child {
+	margin-right: 0;
+}
+.cl5 {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+.cl6 {
+	flex-shrink: 0;
+	margin-right: 8px;
+}
+.cl7 {
+	display: flex;
+}
+.cl8 {
+	width: 18px;
+	vertical-align: middle;
+	margin-right: 2px;
+}
+.cl10 {
+	display: flex;
+	justify-content: center;
+	margin-top: 32px;
+}
+.cl10 > div {
+	color: white;
+	padding: 4px 8px;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+.cl10 > div.active {
+	border-bottom: 1px solid white;
+}
+.cl10 > div:hover:not(.active) {
+	border-top: 1px solid white;
+}
+.cl11 {
+	padding: 0 4px;
+	text-align: center;
+	flex-grow: 1;
+}
+.cl12 {
+	width: 16px;
+	margin-right: 2px;
+	margin-left: 8px;
+	vertical-align: text-top;
+	cursor: pointer;
+}
+.cl14 {
+	display: flex;
+	flex-wrap: wrap;
+}
+.cl14 > div {
+	width: calc(50% - 4px);
+}
+.cl14 > div:nth-child(odd) {
+	margin-right: 8px;
+}

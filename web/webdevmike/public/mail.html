@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+<link href='css/mail.css' rel='stylesheet'>
+</head>
+<body>
+<div class='cl1'>
+	<div class='cl2 cl3'><a href='index.html'><span class='material-icons md-48 md-light'>home</span></a></div>
+	<div class='cl2 cl4'></div>
+	<div class='cl2 cl5'><a href='index.html'><span class='material-icons md-48 md-light'>mail</span></a></div>
+</div>
+<div class='cl6'>
+	<div class='cl8'>
+		<form id='id1'>
+			<label for='firstName'>Name:</label><br>
+			<input type='text' id='firstName' name='firstName' required><br><br>
+			<label for='subject'>Subject:</label><br>
+			<input type='text' id='subject'name='subject' required><br><br>
+			<label for='message'>Message:</label><br>
+			<textarea id='message' name='message' maxlength='2000' required></textarea>
+			<input type='submit' value='Send'>
+		</form>
+	</div>
+</div>
+<div id='id2' class='cl9'>Your message has been sent.</div>
+</body>
+<script>
+for (let i = 1; i < 2; i++) {
+	let str = "const id" + i + " = document.getElementById('id" + i + "');";
+	eval(str);
+}
+document.getElementById('id1').addEventListener('submit', function(e) {
+	e.preventDefault();
+	let xhr = new XMLHttpRequest();
+	let oForm = new FormData(id1);
+	xhr.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			if (this.responseText == 'true') {
+				id1.reset();
+				id2.style.visibility = 'visible';
+				setTimeout(function() {
+					id2.style.visibility = 'hidden';
+				}, 2000);
+			}
+		}
+	};
+	xhr.open('POST', 'php/mail.php');
+	xhr.send(oForm);
+});
+</script>
+</html>

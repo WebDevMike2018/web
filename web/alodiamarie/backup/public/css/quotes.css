@@ -1,0 +1,63 @@
+table {
+	background-color: white;
+	width: 100%;
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+td {
+	padding: 2px 1px;
+	word-wrap: break-word;
+}
+th {
+	padding: 8px 1px;
+}
+th {
+	cursor: pointer;
+}
+td:nth-child(1), td:nth-child(3), td:nth-child(4) {
+	text-align: center;
+}
+tr:nth-child(even) {
+	background-color: hsl(0, 0%, 95%);
+}
+#body {
+	padding: 40px 4px 8px;
+}
+#table2021 {
+	display: none;
+}
+#table2020 {
+	display: none;
+}
+#table2019 {
+	display: none;
+}
+.cl1 {
+	display: flex;
+}
+.cl1 > div {
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	padding: 4px;
+	cursor: pointer;
+}
+.cl1 > div:hover {
+	background-color: rgb(255, 127, 80);
+}
+.cl1 > div.active {
+	background-color: white;
+}
+.cl1 > div:first-child {
+	border-right: none;
+}
+.cl1 > div:last-child {
+	border-left: none;
+}
+@media screen and (max-width: 720px) {
+	table {
+		table-layout: fixed;
+	}
+}

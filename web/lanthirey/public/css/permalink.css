@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body * {
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+}
+input[type='text'] {
+	padding: 2px;
+}
+#sys_msg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2px;
+	text-align: center;
+	background-color: white;
+	z-index: 9;
+	visibility: hidden;
+}
+.cl1 {
+	margin: auto;
+	max-width: 600px;
+	padding: 0 8px 32px;
+}
+.cl2 {
+	margin-bottom: 16px;
+	border: 1px solid #e50808;
+	border-radius: 8px;
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding: 8px 16px;
+	background-color: white;
+	text-align: center;
+}
+.cl3 {
+	border-radius: 8px;
+	margin-bottom: 16px;
+	border: 1px solid #e50808;
+	padding: 16px;
+	background-color: white;
+}
+.cl4 {
+	background-color: #ebcbec;
+	font-size: 0.875rem;
+}
+.cl4:last-child {
+	margin-right: 0;
+}
+.cl5 {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+.cl6 {
+	margin-top: 32px;
+	border-radius: 8px;
+	border: 1px solid #e50808;
+	padding: 8px;
+	background-color: white;
+}
+.cl7 {
+	margin-top: 8px;
+	padding: 2px;
+	background-color: hsl(0, 0%, 90%);
+}
+.cl7:first-child {
+	margin-top: 0;
+}
+.cl8 {
+	font-size: 0.875rem;
+	font-weight: bold;
+}
+.cl10 {
+	width: 100%;
+	height: 50px;
+	margin-top: 8px;
+	padding: 2px;
+	resize: none;
+}
+.cl11 {
+	font-weight: bold;
+	cursor: pointer;
+}
+.cl12 {
+	display: inline-block;
+	width: 50%;
+}
+.cl13 {
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+}
+.cl14 {
+	display: flex;
+	flex-wrap: wrap;
+}
+.cl14 > div {
+	width: calc(50% - 4px);
+}
+.cl14 > div:nth-child(odd) {
+	margin-right: 8px;
+}
+.cl15 {
+	padding: 8px 16px;
+	background-color: white;
+}
+.cl16 {
+	margin-top: 8px;
+}

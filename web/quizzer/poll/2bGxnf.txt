@@ -1,0 +1,1 @@
+a:4:{i:0;a:2:{i:0;s:28:"What is your favorite color?";i:1;a:2:{i:0;s:3:"::1";i:1;i:2;}}i:1;a:2:{i:0;s:3:"Red";i:1;i:0;}i:2;a:2:{i:0;s:5:"Green";i:1;i:1;}i:3;a:2:{i:0;s:4:"Blue";i:1;i:0;}}

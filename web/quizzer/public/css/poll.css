@@ -1,0 +1,52 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+body {
+	background: hsl(0, 0%, 90%);
+}
+#idSysMsg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2px;
+	text-align: center;
+	background-color: white;
+	z-index: 9;
+	visibility: hidden;
+}
+.c1 {
+	max-width: 768px;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 0 8px;
+	background: white;
+}
+.c2 {
+	padding: 1rem;
+	text-align: center;
+	font-size: 2rem;
+}
+.c4 {
+	cursor: pointer;
+	margin-top: 1rem;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	background-color: hsl(0, 0%, 95%);
+}
+.c5 {
+	margin-top: 1rem;
+	padding: 0.5rem;
+	background-color: hsl(0, 0%, 95%);
+}
+.c7 {
+	background-color: red;
+}
+.c8 {
+	background-color: blue;
+}

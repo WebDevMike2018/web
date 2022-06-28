@@ -1,0 +1,45 @@
+img {
+	display: block;
+}
+.h1 {
+	display: flex;
+	justify-content: center;
+	max-width: 768px;
+	margin: 0 auto;
+	border-bottom: 2px solid hsl(0, 0%, 90%);
+	background-color: white;
+}
+/*
+tooltips
+.h2 {
+	position: relative;
+}
+.h2::before {
+	content: "";
+	position: absolute;
+	display: none;
+	top: calc(100% - 10px);
+	left: 50%;
+	transform: translateX(-50%);
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+}
+.h2::after{
+	content: "HOME";
+	display: none;
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 50%;
+	transform:translateX(-50%);
+	border-radius: 8px;
+	padding: 8px;
+	background-color: black;
+	color: white;
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+.h2:hover::before, .h2:hover::after {
+	display: block;
+}
+*/

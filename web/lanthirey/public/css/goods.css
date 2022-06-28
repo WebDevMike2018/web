@@ -1,0 +1,300 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+#id_sys_msg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2px;
+	text-align: center;
+	background-color: white;
+	z-index: 19;
+	visibility: hidden;
+}
+.c1 {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.c2 {
+	cursor: pointer;
+}
+.d1 {
+	max-width: 740px;
+	margin: 0 auto;
+}
+.d2 {
+	border: 1px solid #e50808;
+	border-radius: 8px;
+	padding: 8px 0;
+	background: white;
+	font-family: plus8Bold;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.d3 {
+	display: flex;
+	max-width: 60%;
+	margin: 32px auto 0;
+	background: white;
+}
+.d4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	border-right: 1px solid gray;
+	padding: 16px;
+}
+.d5 img {
+	display: block;
+	max-width: 100%;
+}
+.d6 {
+	text-align: center;
+}
+.d7 {
+	display: inline-block;
+	width: max-content;
+	border: 1px solid black;
+	padding: 8px;
+}
+.d8 {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 16px;
+}
+.d9 {
+	text-align: center;
+}
+.d11 {
+	text-align: right;
+	text-decoration: underline;
+	color: teal
+}
+.d12 {
+	margin-top: 64px;
+}
+.d13 {
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	margin-top: 32px;
+}
+.d14 {
+	flex-shrink: 0;
+	width: 300px;
+	height: 300px;
+	background: white;
+	color: black;
+}
+.d15 {
+	cursor: pointer;
+	position: absolute;
+	top: calc(50% - 30px);
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	background: hsla(0, 0%, 0%, 0.5);
+	color: white;
+	font-size: 2rem;
+	user-select: none;
+}
+.d16 {
+	left: 8px;
+}
+.d17 {
+	right: 8px;
+}
+.d18 {
+	margin-top: 32px;
+	text-align: right;
+}
+.d19 {
+	display: inline-block;
+	padding: 8px;
+	background: white;
+	color: black;
+	font-style: italic;
+}
+.d21 {
+	display: block;
+	width: 100%;
+}
+.d22 {
+	margin-top: 64px;
+	padding: 16px 0;
+}
+.d23 {
+	display: block;
+	width: 256px;
+	margin: 32px auto 0;
+}
+.d25 {
+	display: block;
+	max-width: 100%;
+}
+.m1 {
+	padding: 0 8px 8px;
+}
+.m2 {
+	border: 1px solid #e50808;
+	border-radius: 8px;
+	padding: 8px 0;
+	background: white;
+	font-family: plus8Bold;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.m3 {
+	display: flex;
+	margin-top: 32px;
+	background: white;
+}
+.m4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	border-right: 1px solid gray;
+	padding: 16px;
+}
+.m6 {
+	display: block;
+	max-width: 100%;
+}
+.m8 {
+	display: inline-block;
+	width: max-content;
+	border: 1px solid black;
+	padding: 8px;
+}
+.m9 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 16px;
+}
+.m10 {
+	text-align: center;
+}
+.m12 {
+	text-align: right;
+	text-decoration: underline;
+	color: teal
+}
+.m13 {
+	margin-top: 64px;
+}
+.m14 {
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	margin-top: 32px;
+}
+.m15 {
+	flex-shrink: 0;
+	width: 300px;
+	height: 300px;
+	background: white;
+	color: black;
+}
+.m16 {
+	cursor: pointer;
+	position: absolute;
+	top: calc(50% - 30px);
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	background: hsla(0, 0%, 0%, 0.5);
+	color: white;
+	font-size: 2rem;
+	user-select: none;
+}
+.m17 {
+	left: 8px;
+}
+.m18 {
+	right: 8px;
+}
+.m19 {
+	margin-top: 32px;
+	text-align: right;
+}
+.m20 {
+	display: inline-block;
+	padding: 8px;
+	background: white;
+	color: black;
+	font-style: italic;
+}
+.m21 {
+	display: block;
+	width: 100%;
+}
+.m22 {
+	display: block;
+	max-width: 300px;
+	margin: 32px auto 0;
+	padding: 8px 12px;
+	background-color: white;
+	text-align: center;
+}
+.m23 {
+	position: relative;
+	padding: 16px 0;
+}
+.m24 {
+	display: block;
+	width: 256px;
+	margin: 32px auto 0;
+}
+.m25 {
+	width: 300px;
+	padding: 8px 12px;
+	background: white;
+	font-family: plus8Bold;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.m27 {
+	display: block;
+	max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+	.d1 {
+		display: none;
+	}
+	.m1 {
+		display: block;
+	}
+}
+@media screen and (min-width: 769px) {
+	.d1 {
+		display: block;
+	}
+	.m1 {
+		display: none;
+	}
+}

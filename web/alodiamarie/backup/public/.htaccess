@@ -1,0 +1,8 @@
+# hide php errors
+php_flag display_errors Off
+
+# allow file link without php extension
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]

@@ -1,0 +1,12 @@
+.a1 {display: none;}
+.b1 {display: none;}
+@media screen and (max-width: 1259px) {
+	.a1 {
+		display: block;
+	}
+}
+@media screen and (min-width: 1260px) {
+	.b1 {
+		display: block;
+	}
+}

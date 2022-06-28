@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery</title>
+<style>
+	* {
+		box-sizing: border-box;
+		margin: 0;
+	}
+	.a0 {
+		display: none;
+	}
+	.a1 {
+		max-width: 800px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.a2 {
+		display: block;
+		width: 100%;
+	}
+	.a3 {
+		display: flex;
+		justify-content: center;
+	}
+</style>
+</head>
+<body>
+<div id="id0" class="a0">
+	<img src="https://picsum.photos/300/400">
+	<img src="https://picsum.photos/300/400">
+	<img src="https://picsum.photos/300/400">
+</div>
+<div id="id1" class="a1"></div>
+<script>
+function fPop() {
+	let a0 = id0.children;
+	for (let i = 0; i < a0.length; i++) {
+		if (a0[i].clientWidth >= id1.clientWidth) {
+			let o0 = document.createElement("img");
+			o0.src = a0[i].src;
+			o0.classList.add("a2");
+			id1.append(o0);
+		} else {
+			
+		}
+	}
+}
+</script>
+</body>
+</html>

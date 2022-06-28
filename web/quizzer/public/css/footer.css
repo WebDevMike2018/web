@@ -1,0 +1,27 @@
+img {
+	display: block;
+}
+.f1 {
+	display: flex;
+	justify-content: center;
+	max-width: 768px;
+	margin: 0 auto;
+	border-top: 2px solid hsl(0, 0%, 90%);
+	background-color: white;
+}
+/*
+.n2 {
+	position: relative;
+}
+.n2:after{
+	display: none;
+	content: "HOME";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform:translateX(-50%);
+}
+.n2:hover::after {
+	display: block;
+}
+*/

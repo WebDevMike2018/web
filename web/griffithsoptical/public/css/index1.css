@@ -1,0 +1,89 @@
+body {
+	
+	background-image:url('https://www.uptownvisiondallas.com/images/uptown-vision-background.png');
+
+}
+
+/*nav { background-image:url('https://www.uptownvisiondallas.com/images/nav_bg.png'); }*/
+nav .brand-logo { color: #666666; }
+nav ul a {	}
+nav ul a:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+h4 { font-weight: bolder; }
+
+footer.page-footer { margin-top: 0px; background-image:url('https://www.uptownvisiondallas.com/images/nav_bg.png'); }
+
+.fullwidth-header {
+	background-image:url('../media/image/index1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+}
+
+.thinbar { 
+	height: 1px;	
+	background: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
+		background: rgba(0, 0, 0, .2); 
+}
+
+#greyarea {
+	background-color: #666666;
+	background-image: url(https://www.uptownvisiondallas.com/images/uptown-vision-dallas-tx.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+.modal-content {height: 300px;}
+
+#herotext {	
+	 color: white;
+			 padding: 15px;
+			 background-color: rgba(0, 0, 0, .6); 
+			
+}
+#herotextinner {	
+	 color: white;
+			 padding: 15px;
+			 background-color: rgba(0, 0, 0, .6); 
+			 width: auto;
+			
+}
+
+#phone_number_container {background-color: rgba(0, 0, 0, .8); color: #FFFFFF; }
+
+
+.dropdown-content{
+			background-color: #fff;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+		font-size: 16px;
+		color: #212121;
+		display: block;
+		line-height: 22px;
+		padding: 14px 16px;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+		font-size: 16px;
+		color: #212121;
+		display: block;
+		line-height: 22px;
+		padding: 14px 16px;
+}
+
+.dropdown-content li:hover, .dropdown-content li.active {
+	background-color: #eee;
+	color: blue;
+}
+
+.dropdown-content li:hover a, .dropdown-content li.active {
+	color: #0271BD;
+}

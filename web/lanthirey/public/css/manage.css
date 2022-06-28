@@ -1,0 +1,257 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body *::-webkit-scrollbar {
+	width: 8px;
+}
+body *::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 8px;
+}
+body *::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 8px;
+}
+body *::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+a {
+	text-decoration: none;
+}
+#sys_msg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2px;
+	text-align: center;
+	background-color: white;
+	z-index: 19;
+	visibility: hidden;
+}
+.cl1 {
+	padding: 200px 8px 8px;
+}
+.cl2 {
+	display: flex;
+	max-width: 850px;
+	margin: auto;
+	margin-top: 32px;
+	border-bottom: 1px solid gray;
+	background-color: white;
+	cursor: pointer;
+}
+.cl2:first-child {
+	margin-top: 0;
+}
+.cl3 {
+	flex-grow: 1;
+	padding-top: 4px;
+	text-align: center;
+	font-size: 1.5rem;
+}
+.cl4 {
+	display: block;
+	width: 36px;
+}
+.cl5 {
+	max-width: 850px;
+	margin: auto;
+	padding: 16px 8px;
+	background-color: white;
+}
+.cl6 {
+	margin-top: 16px;
+	border: 1px solid black;
+	padding: 4px;
+}
+.cl6:first-child {
+	margin-top: 0;
+}
+.cl7 {
+	text-align: center;
+}
+.cl10 {
+	display: flex;
+	justify-content: space-between;
+}
+.cl10 > div {
+	position: relative;
+	padding: 2px 6px;
+	cursor: pointer;
+	overflow: visible;
+}
+.cl11 {
+	background-color: hsl(120, 100%, 90%);
+}
+
+.cl12 {
+	background-color: hsl(0, 100%, 90%);
+}
+.cl13 {
+	background-color: hsl(0, 100%, 90%);
+}
+.cl14 {
+	display: inline-block;
+	width: 150px;
+	position: absolute;
+	top: 1px;
+	left: 110%;
+	padding: 2px;
+	background-color: black;
+	color: white;
+	z-index: 1;
+	visibility: hidden;
+}
+.cl15 {
+	display: inline-block;
+	width: 250px;
+	position: absolute;
+	top: 1px;
+	right: 110%;
+	padding: 2px;
+	background-color: black;
+	color: white;
+	z-index: 1;
+	visibility: hidden;
+}
+.cl16 {
+	cursor: pointer;
+}
+.form1 {
+	max-width: 600px;
+	margin: auto;
+	border: 2px solid black;
+	padding: 8px;
+}
+.form1 input[type=text] {
+	padding: 4px;
+}
+.form1a {
+	width: 40%;
+}
+.form1b {
+	width: 100%;
+	padding: 4px;
+	resize: vertical;
+}
+.form1c {
+	cursor: pointer;
+}
+.form1d {
+	border-bottom: 1px solid black;
+	padding: 0 0 8px;
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+.form1e {
+	margin-top: 16px;
+}
+.form1f {
+	margin-left: 8px;
+}
+.form1f:first-child {
+	margin-left: 0;
+}
+.form2 {
+	max-width: 600px;
+	margin: auto;
+	margin-top: 32px;
+	border: 2px solid black;
+	padding: 8px;
+}
+.form2 input[type=number] {
+	padding: 4px;
+}
+.form2a {
+	cursor: pointer;
+}
+.form2b {
+	border-bottom: 1px solid black;
+	padding: 0 0 8px;
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+.form2c {
+	margin-top: 16px;
+}
+.form3 {
+	border: 2px solid black;
+	padding: 8px;
+}
+.form3 input[type=text] {
+	padding: 4px;
+}
+.form3a {
+	width: 100%;
+	height: 100px;
+	padding: 8px;
+	resize: vertical;
+}
+.form3b {
+	margin-top: 16px;
+}
+.form3c {
+	margin-left: 16px;
+}
+.form3d {
+	width: 24px;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+.form3e {
+	position: relative;
+	margin-top: 16px;
+}
+.form3e:first-child {
+	margin-top: 0;
+}
+.form3f {
+	display: none;
+	position: absolute;
+	top: -12px;
+	left: 64px;
+	max-width: 212px;
+	border: 2px solid black;
+	padding: 8px;
+	background-color: white;
+	z-index: 1;
+}
+.form3f > img {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+.form3g {
+	cursor: pointer;
+}
+.form3h {
+	border-bottom: 1px solid black;
+	padding: 0 0 8px;
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+.form4 {
+	margin-top: 32px;
+	border: 2px solid black;
+	padding: 8px;
+}
+.form4a {
+	border-bottom: 1px solid black;
+	padding: 0 0 8px;
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+.form4b {
+	margin-top: 16px;
+}
+.form4c {
+	margin-left: 16px;
+	cursor: pointer;
+}

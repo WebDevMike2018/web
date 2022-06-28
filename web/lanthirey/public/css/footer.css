@@ -1,0 +1,54 @@
+.f1 {
+	max-width: 870px;
+	margin: 128px auto 32px;
+	padding: 0 8px;
+	color: white;
+}
+.f2 {
+	display: flex;
+	justify-content: space-between;
+}
+.f4 {
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+.f5 {
+	font-size: 0.625rem;
+	cursor: pointer;
+}
+.f6 {
+	display: flex;
+	justify-content: space-between;
+}
+.f8 {
+	color: gray;
+	font-size: 1.25rem;
+	font-style: italic;
+}
+.f9 {
+	margin-bottom: 8px;
+	text-align: right;
+}
+.f10 {
+	margin-bottom: 8px;
+}
+.f11 {
+	width: 180px;
+}
+@media screen and (max-width: 768px) {
+	.f2 {
+		display: none;
+	}
+	.f6 {
+		display: flex;
+	}
+}
+@media screen and (min-width: 769px) {
+	.f6 {
+		display: none;
+	}
+	.f2 {
+		display: flex;
+	}
+}

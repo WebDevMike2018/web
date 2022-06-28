@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>About Us | Griffiths Optical</title>
+
+<!-- CSS	-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://www.uptownvisiondallas.com/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="https://www.uptownvisiondallas.com/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+	<nav class="grey darken-4" role="navigation">
+		<div class="nav-wrapper container"><a style="color:white"id="logo-container" href="index.htm" class="brand-logo">Griffiths Optical</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="services.htm">services</a></li>
+				<li><a href="eyeglasses.htm">eyeglasses</a></li>
+				<li><a href="about.htm">about us</a></li>
+			</ul>
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="services.htm">services</a></li>
+				<li><a href="eyeglasses.htm">eyeglasses</a></li>
+				<li><a href="about.htm">about us</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+	
+	<div class="no-pad-bot" id="index-banner">
+		 <div class="container">
+			<div class="row ">
+				<h1 id="herotextinner" class="header col s12 light white-text">About Us</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="thinbar"></div>
+	<div class="no-pad-bot	brown lighten-5">
+	<div class="container">
+		<div class="section">
+
+			<div class="row">
+				<div id="hero-left" class="col s12 m9 l9 ">
+						<h3>Our Vision</h3>
+						<p>
+							Griffiths Optical is dedicated to providing the best optometric service in Roseville. We offer comprehensive eye exams and exceptional frame styling by our opticians. Come by and let our doctors and staff take care of all your visual needs.
+						</p>
+						<p>
+							The practice recognizes that its success is a result of developing good relationships with our clients and delivering an experience that exceeds their expectations through both the service and care provided by Griffiths Optical doctors and opticians.
+						</p>
+						<p>
+						<h3>	Optometrist </h3>
+						<ul>
+						<li>Dr. Liann Griffiths</li>
+						
+						</ul>
+				</div>
+				<div class="col s12 m3 l3">
+				</div>
+			</div>
+
+		</div>
+		<br><br>
+
+		<div class="section">
+
+		</div>
+	</div>
+	</div>
+
+
+	<!--	Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://www.uptownvisiondallas.com/js/materialize.js"></script>
+	<script src="https://www.uptownvisiondallas.com/js/init.js"></script>
+	<script>
+	$(document).ready(function(){
+		// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+		$('.modal-trigger').leanModal({
+			complete: function() { 
+					$('.yt_player_iframe').each(function(){
+						this.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*')
+					});
+			} 
+		});
+
+		$(".dropdown-trigger").dropdown({belowOrigin: true, constrain_width: false});
+		
+	});
+	</script>
+	</body>
+</html>

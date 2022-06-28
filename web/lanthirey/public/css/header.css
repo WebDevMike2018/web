@@ -1,0 +1,111 @@
+@font-face {
+	font-family: "plus8Regular";
+	src: url('font/8bitOperatorPlus8-Regular.ttf');
+}
+@font-face {
+	font-family: "plus8Bold";
+	src: url('font/8bitOperatorPlus8-Bold.ttf');
+}
+a {
+	text-decoration: none;
+}
+body {
+	background-color: black;
+	font-family: 'Times New Roman', Times, serif;
+	cursor: url("../media/cursor/spellBook.ani"), auto;
+}
+#idSysMsg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2px;
+	text-align: center;
+	background-color: white;
+	z-index: 19;
+	visibility: hidden;
+}
+.header1 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	width: 100%;
+	padding: 8px 8px 0;
+	background-color: black;
+}
+.header2 {
+	text-align: center;
+	margin-bottom: 8px;
+	font-size: 1.5rem;
+	color: white;
+}
+.header3 {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.header4 {
+	border: 1px solid rgb(27, 0, 0);
+	border-radius: 8px;
+	background-color: white;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	padding: 8px 16px;
+	color: black;
+	display: flex;
+	align-items: center;
+}
+.header4:last-child {
+	margin-right: 0;
+}
+.header4:hover {
+	background-color: #fff99e;
+}
+.header5 {
+	width: 32px;
+	height: 32px;
+}
+.header6 {
+	font-family: plus8Bold;
+	font-size: 1.25rem;
+	margin-left: 16px;
+}
+.header7 {
+	margin-left: 10px;
+}
+@media screen and (max-width: 546px) {
+	#visitorCounter {
+		display: none;
+	}
+	.header2 {
+		font-size: 1.125rem;
+	}
+	.header4 {
+		padding: 4px 8px;
+	}
+	.header5 {
+		display: none;
+	}
+	.header6 {
+		margin-left: 0;
+	}
+	.header7 {
+		margin-left: 0;
+	}
+}
+@media screen and (min-width: 877px) {
+	.c1, .cl1 {
+		margin-top: 166px !important;
+	}
+}
+@media screen and (min-width: 547px) and (max-width: 876px) {
+	.c1, .cl1 {
+		margin-top: 224px !important;
+	}
+}
+@media screen and (max-width: 546px) {
+	.c1, .cl1 {
+		margin-top: 169px !important;
+	}
+}

@@ -1,0 +1,190 @@
+:root {
+	--margin1: max(32px, 3.33vw);
+}
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: hsl(0, 0%, 10%);
+	color: white;
+}
+body *::-webkit-scrollbar {
+	width: 8px;
+}
+body *::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 8px;
+}
+body *::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 8px;
+}
+body *::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+a {
+	text-decoration: none;
+}
+input[type=tel] {
+	padding: 8px;
+	background-color: white;
+}
+input[type=text] {
+	padding: 8px;
+	background-color: white;
+}
+label {
+	font-size: 1.25rem;
+}
+.c3 {
+	max-width: 100%;
+}
+.c4 {
+	padding: var(--margin1);
+	text-align: center;
+	font-size: 1.5rem;
+}
+.c5 {
+	padding: var(--margin1);
+	color: black;
+}
+.c6 {
+	border-radius: 5px;
+	background-color: hsl(0, 0%, 90%);
+}
+.c7 {
+	padding: 8px;
+	text-align: center;
+	font-size: 2rem;
+}
+.c8 {
+	width: 75%;
+	margin: 8px auto 16px;
+	border-top: 1px solid gray;
+}
+.c9 {
+	padding-bottom: 16px;
+}
+.c10 {
+	display: flex;
+	justify-content: center;
+}
+.c10 > div {
+	margin-left: 50px;
+}
+.c10 > div:first-child {
+	margin-left: 0;
+}
+.c13, .c14, .c24 {
+	text-align: center;
+	font-size: 1.5rem;
+}
+.c15 {
+	text-align: center;
+	background-color: burlywood;
+}
+.c16 {
+	text-align: center;
+	background-color: cornflowerblue;
+}
+.c17 {
+	display: flex;
+}
+.c17 > div {
+	flex-basis: calc(100% / 6);
+	text-align: center;
+}
+.c18 {
+	width: 300px;
+	margin: auto;
+}
+.c19 {
+	display: inline-block;
+	width: calc(300px / 6);
+	padding: 8px;
+	text-align: center;
+	cursor: pointer;
+}
+.c20 {
+	background-color: cyan;
+}
+.c21 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.c21 > div {
+	width: 85px;
+	margin-top: 8px;;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 8px;
+	text-align: center;
+	cursor: pointer;
+}
+.c22 {
+	background-color: blue;
+	color: white;
+}
+.c23 > div {
+	text-align: center;
+	margin-top: 16px;
+}
+.c23 > div:first-child {
+	margin-top: 0;
+}
+.header1 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 96px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+}
+.header2 {
+	display: block;
+	height: 96px;
+}
+.header3 {
+	padding: 16px;
+	color: white;
+	font-size: 1.25rem;
+}
+.header4 {
+	padding: 16px;
+	color: white;
+	font-size: 1.25rem;
+	cursor: url(../media/image/phone.png), auto;
+}
+.sys_msg {
+	z-index: 9;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2px;
+	text-align: center;
+	background-color: white;
+	font-size: 1.25rem;
+	font-weight: bold;
+	visibility: hidden;
+}
+@media screen and (max-width: 600px) {
+	.header1 {
+		flex-direction: column;
+	}
+	.header2 {
+		order: 1;
+	}
+	.header3 {
+		order: 2;
+	}
+	.header4 {
+		display: none;
+	}
+}

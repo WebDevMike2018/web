@@ -1,0 +1,180 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body *::-webkit-scrollbar {
+	width: 8px;
+}
+body *::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 8px;
+}
+body *::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 8px;
+}
+body *::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+a {
+	text-decoration: none;
+}
+.cl1 {
+	margin: auto;
+	max-width: 870px;
+	padding: 0 8px 32px;
+}
+.cl2 {
+	display: flex;
+}
+.cl2 > div {
+	display: flex;
+	flex-direction: column;
+}
+.cl3 > * {
+	margin-top: 16px;
+	border: 1px solid #e50808;
+	background-color: white;
+	width: 200px;
+}
+.cl3 > *:first-child {
+	margin-top: 0;
+}
+.cl4 {
+	flex-grow: 1;
+	margin-left: 16px;
+}
+.cl4 > div {
+	border: 1px solid #e50808;
+	background-color: white;
+}
+.cl6 {
+	padding: 8px;
+	color: black;
+}
+.cl8 {
+	display: block;
+	width: 100%;
+}
+.cl9 {
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.cl10 {
+	padding: 8px;
+	font-family: plus8Bold;
+	font-size: 1.5rem;
+}
+.cl11 {
+	margin-top: 16px;
+	padding: 8px;
+}
+.cl12 {
+	border: 1px solid #e50808;
+	border-radius: 8px;
+	margin-top: 52px;
+	margin-bottom: 16px;
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding: 8px 16px;
+	background-color: white;
+}
+.cl13 {
+	border: 1px solid #e50808;
+	border-radius: 8px;
+	margin-bottom: 16px;
+	padding: 16px;
+	background-color: white;
+}
+.cl14 {
+	background-color: #ebcbec;
+	color: black;
+	font-size: 0.875rem;
+}
+.cl15 {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	border: 1px solid black;
+}
+.cl16 {
+	flex-shrink: 0;
+}
+.cl17 {
+	display: flex;
+}
+.cl18 {
+	width: 16px;
+	vertical-align: middle;
+	margin-right: 2px;
+}
+.cl21 {
+	padding: 0 4px;
+	text-align: center;
+	flex-grow: 1;
+}
+.cl22 {
+	width: 16px;
+	margin-right: 2px;
+	margin-left: 8px;
+	vertical-align: text-top;
+	cursor: pointer;
+}
+.cl24 {
+	display: flex;
+	flex-wrap: wrap;
+}
+.cl24 > div {
+	width: calc(50% - 4px);
+}
+.cl24 > div:nth-child(odd) {
+	margin-right: 8px;
+}
+.cl25 {
+	display: flex;
+	justify-content: center;
+	margin: 32px 0;
+}
+.cl25 > div {
+	color: white;
+	padding: 4px 8px;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+.cl25 > div.active {
+	border-bottom: 1px solid white;
+}
+.cl25 > div:hover:not(.active) {
+	border-top: 1px solid white;
+}
+.cl26 {
+	margin: auto;
+	max-width: 600px;
+	padding: 0 8px;
+}
+.sys_msg {
+	z-index: 9;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2px;
+	text-align: center;
+	background-color: white;
+	font-size: 1.25rem;
+	font-weight: bold;
+	visibility: hidden;
+}
+@media screen and (max-width: 546px) {
+	.cl2 {
+		flex-direction: column-reverse;
+	}
+	.cl3 {
+		margin-top: 32px;
+		align-self: center;
+	}
+	.cl4 {
+		margin-left: 0;
+	}
+}

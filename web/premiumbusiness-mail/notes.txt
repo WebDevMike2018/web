@@ -1,0 +1,2 @@
+QoL
+Add email to document after creation.

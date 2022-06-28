@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body * {
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+}
+.cl1 {
+	padding: 4px 8px;
+	width: 100%;
+}
+.cl2 {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+.cl3 {
+	border: 1px solid black;
+	margin-top: 32px;
+}
+.cl4 {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	padding: 4px 8px;
+}
+.cl5 {
+	padding: 8px;
+}
+.cl6 {
+	cursor: pointer;
+}

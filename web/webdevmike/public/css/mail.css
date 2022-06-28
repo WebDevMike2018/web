@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body {
+	background-color: lightskyblue;
+	margin: 0;
+}
+.material-icons.md-18 {
+	font-size: 18px;
+}
+.material-icons.md-24 {
+	font-size: 24px;
+}
+.material-icons.md-36 {
+	font-size: 36px;
+}
+.material-icons.md-48 {
+	font-size: 48px;
+}
+.material-icons.md-dark {
+	color: black;
+}
+.material-icons.md-light {
+	color: white;
+}
+.cl1 {
+	display: flex;
+	background-color: deepskyblue;
+	border-bottom: 2px solid white;
+}
+.cl2 {
+	width: calc(100% / 3);
+	height: 48px;
+}
+.cl3 {
+	padding-left: 4px;
+}
+.cl5 {
+	padding-right: 4px;
+	text-align: right;
+}
+.cl6 {
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+}
+.cl7 {
+	margin: auto;
+	margin-top: 50px;
+	padding: 4px;
+	max-width: 800px;
+	background-color: deepskyblue;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	text-align: center;
+	color: white;
+}
+.cl8 {
+	margin: auto;
+	margin-top: 50px;
+	padding: 8px;
+	padding-bottom: 12px;
+	max-width: 800px;
+	background-color: white;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.cl9 {
+	position: fixed;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	margin-left: -117px;
+	background-color: white;
+	border: 4px solid lime;
+	border-radius: 4px;
+	padding: 8px;
+	visibility: hidden;
+}
+label {
+	font-size: 1.2rem;
+}
+input[type=text] {
+	padding: 8px;
+	width: 50%;
+	font-size: 1.2rem;
+}
+input[type=submit] {
+	width: 100%;
+	margin-top: 8px;
+	background-color: deepskyblue;
+	color: white;
+	font-weight: bold;
+	padding: 4px;
+	font-size: 2rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: 4px 4px 2px lightgray;
+}
+textarea {
+	padding: 8px;
+	width: 100%;
+	height: 400px;
+	font-size: 1.2rem;
+	resize: none;
+}
+@media (max-width: 800px) {
+	input[type=text] {
+		width: 100%;
+	}
+	textarea {
+		height: 200px;
+	}
+	.cl8 {
+		margin-top: 25px;
+	}
+}

@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body {
+	background-color: lightskyblue;
+	margin: 0;
+}
+.material-icons.md-18 {
+	font-size: 18px;
+}
+.material-icons.md-24 {
+	font-size: 24px;
+}
+.material-icons.md-36 {
+	font-size: 36px;
+}
+.material-icons.md-48 {
+	font-size: 48px;
+}
+.material-icons.md-dark {
+	color: black;
+}
+.material-icons.md-light {
+	color: white;
+}
+.cl1 {
+	display: flex;
+	background-color: deepskyblue;
+	border-bottom: 2px solid white;
+}
+.cl2 {
+	width: calc(100% / 3);
+	height: 48px;
+}
+.cl3 {
+	padding-left: 4px;
+}
+.cl5 {
+	padding-right: 4px;
+	text-align: right;
+}
+.cl6 {
+	margin: auto;
+	margin-top: 50px;
+	padding: 4px;
+	max-width: 800px;
+	background-color: deepskyblue;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	font-size: 2rem;
+	text-align: center;
+	color: white;
+}
+.cl7 {
+	margin: auto;
+	padding: 8px;
+	max-width: 800px;
+	background-color: white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	font-size: 1.2rem;
+}
+.cl8 {
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+}
+.cl9 {
+	text-align: center;
+}
+.cl10 {
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.cl11 {
+	padding: 8px;
+	flex-basis: 50%;
+	text-align: center;
+}
+@media (max-width: 800px) {
+	.cl11 {
+		flex-basis: 100%;
+	}
+}

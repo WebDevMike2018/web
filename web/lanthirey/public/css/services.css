@@ -1,0 +1,169 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+#idSysMsg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2px;
+	text-align: center;
+	background-color: white;
+	z-index: 19;
+	visibility: hidden;
+}
+.a1 {
+	max-width: 584px;
+	margin: 0 auto;
+	padding: 0 8px;
+}
+.a2 {
+	border: 1px solid #e50808;
+	border-radius: 8px;
+	padding: 8px 16px;
+	background: white;
+	text-align: center;
+	font-family: plus8Bold;
+	font-size: 1.5rem;
+}
+.a3 {
+	display: block;
+	max-width: 360px;
+	margin: 32px auto;
+	border: 2px solid black;
+	padding: 8px 16px;
+	background-color: white;
+	color: black;
+}
+.a4 {
+	padding: 8px 0;
+	text-align: center;
+	font-weight: bold;
+}
+.a5 {
+	padding: 8px 0;
+}
+.a6 {
+	padding: 8px 0;
+	font-size: 0.75rem;
+}
+.a7 {
+	padding: 8px 0;
+	text-align: right;
+}
+.a9 {
+	margin-top: 64px;
+}
+.a10 {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	width: 230px;
+	margin: 32px auto 0;
+	padding: 8px 16px;
+	background-color: white;
+	color: black;
+}
+.a10 img {
+	display: block;
+}
+.a11 {
+	max-width: 360px;
+	margin: 32px auto 0;
+	padding: 0 16px;
+	color: white;
+}
+.a12 {
+	display: block;
+	margin-top: 32px;
+	padding: 16px;
+	background-color: white;
+}
+.a13 {
+	display: flex;
+	gap: 8px;
+}
+.a14 {
+	flex-grow: 1;
+}
+.a15 {
+	width: 100%;
+}
+.a16 {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	margin-top: 16px;
+}
+.a17 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.a18 {
+	width: 100%;
+}
+.a19::placeholder {
+	font-style: italic;
+}
+.a20 {
+	display: flex;
+	min-width: 212px;
+	gap: 8px;
+}
+.a21 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.a22 {
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+.a23 {
+	padding-left: 18px;
+	font-size: 0.75rem;
+}
+.a24 {
+	width: 100%;
+	resize: none;
+}
+.a25 {
+	text-align: right;
+}
+.a26 {
+	cursor: pointer;
+}
+.b1 {
+	display: none;
+	margin: 0 auto;
+}
+.c1 {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.m8 {
+	margin-top: 8px;
+}
+.m16 {
+	margin-top: 16px;
+}
+.m32 {
+	margin-top: 32px;
+}
+.m64 {
+	margin-top: 64px;
+}
+/*
+@media screen and (max-width: 768px) {
+	.a1 {
+		display: block;
+	}
+}
+@media screen and (min-width: 769px) {
+	.b1 {
+		display: block;
+	}
+}
+*/

@@ -1,0 +1,25 @@
+#no cache
+#Header add Cache-Control "no-store, max-age=0"
+
+# hide php errors
+#php_flag display_errors On
+
+# log php errors
+#php_flag log_errors On
+#php_value error_log /usr/www/lanthirey/php_errors.log
+
+# Send requests to /index.php
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(.*)$ index.php
+
+# allow php access without extension
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^(.*)$ $1.php [NC,L]
+
+# remove php extension
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} -f
