@@ -1,1 +1,0 @@
-This theme is intended for educational purposes only. Not for commercial use.
