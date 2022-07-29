@@ -1,2 +1,0 @@
-dev relative path: /web/project/public/
-prod relative path: /
